@@ -1,0 +1,107 @@
+/* Paleta de Cores: Azul Marinho, Cinza Espacial e Aço */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e9ecef; /* Cinza claro de fundo */
+    color: #212529;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    width: 320px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    border-top: 8px solid;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Estilo VIP: Azul Marinho Profundo */
+.jato { 
+    border-color: #1b263b; 
+} 
+
+/* Estilo Carga: Cinza Chumbo/Industrial */
+.carga { 
+    border-color: #415a77; 
+} 
+
+.info {
+    text-align: left;
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    border-left: 3px solid #dee2e6;
+}
+
+.controles button {
+    width: 100%;
+    padding: 10px;
+    margin: 6px 0;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    background-color: #0d47a1; /* Azul corporativo */
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.controles button:hover { 
+    background-color: #1565c0; 
+}
+
+/* Botão da Torre: Tom de Alerta Sóbrio (Laranja Queimado ou Azul Escuro) */
+.btn-torre { 
+    background-color: #334155 !important; /* Azul Ardosia Escuro */
+}
+
+.btn-torre:hover {
+    background-color: #1e293b !important;
+}
+
+input {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+input:focus {
+    outline: 2px solid #0d47a1;
+}
+
+/* Log de Mensagens: Estilo Terminal Moderno */
+#log-mensagens {
+    margin-top: 30px;
+    padding: 20px;
+    background: #1e293b; /* Fundo azul quase preto */
+    color: #94a3b8;    /* Texto acinzentado */
+    border-radius: 8px;
+    display: inline-block;
+    min-width: 500px;
+    font-family: 'Courier New', Courier, monospace;
+    border: 1px solid #334155;
+    text-align: left;
+}
+
+#log-mensagens span {
+    color: #38bdf8; /* Azul claro para destacar comandos */
+}
